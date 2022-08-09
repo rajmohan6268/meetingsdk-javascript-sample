@@ -8,12 +8,12 @@ ZoomMtg.i18n.reload('en-US')
 
 // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
 var signatureEndpoint = ''
-var sdkKey = ''
-var meetingNumber = '123456789'
+var sdkKey = 'LoRzRfMtnMH2h0ZhlT0M3xvX7eX56K2Z4Lsn'
+var meetingNumber = '88459207507'
 var role = 0
 var leaveUrl = 'http://localhost:8080'
 var userName = 'JavaScript'
-var userEmail = ''
+var userEmail = 'rajmohan@edvoy.com'
 var passWord = ''
 // pass in the registrant's token if your meeting or webinar requires registration. More info here:
 // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-meeting-with-registration-required
@@ -21,23 +21,25 @@ var passWord = ''
 var registrantToken = ''
 
 function getSignature() {
-  fetch(signatureEndpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      meetingNumber: meetingNumber,
-      role: role
-    })
-  }).then((response) => {
-    return response.json()
-  }).then((data) => {
-    console.log(data)
-    startMeeting(data.signature)
-  }).catch((error) => {
-  	console.log(error)
-  })
+  // fetch(signatureEndpoint, {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   },
+  //   body: JSON.stringify({
+  //     meetingNumber: meetingNumber,
+  //     role: role
+  //   })
+  // }).then((response) => {
+  //   return response.json()
+  // }).then((data) => {
+  //   console.log(data)
+  // }).catch((error) => {
+  // 	console.log(error)
+  // })
+
+  startMeeting("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZGtLZXkiOiJMb1J6UmZNdG5NSDJoMFpobFQwTTN4dlg3ZVg1NksyWjRMc24iLCJtbiI6Ijg4NDU5MjA3NTA3Iiwicm9sZSI6MCwiaWF0IjoxNjYwMDU4Nzc4LCJleHAiOjE2NjAwNjU5NzgsImFwcEtleSI6IkxvUnpSZk10bk1IMmgwWmhsVDBNM3h2WDdlWDU2SzJaNExzbiIsInRva2VuRXhwIjoxNjYwMDY1OTc4fQ.A50BsELDURuR3StoFnKeNt_-BftI0f9Rh007mnwrV-k")
+
 }
 
 function startMeeting(signature) {
