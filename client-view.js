@@ -9,9 +9,9 @@ ZoomMtg.i18n.reload('en-US')
 // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
 var signatureEndpoint = ''
 var sdkKey = 'LoRzRfMtnMH2h0ZhlT0M3xvX7eX56K2Z4Lsn'
-var meetingNumber = '88459207507'
+var meetingNumber = '84377032326'
 var role = 0
-var leaveUrl = 'http://localhost:8080'
+var leaveUrl = 'https://zoom-meet-test.netlify.app/'
 var userName = 'JavaScript'
 var userEmail = 'rajmohan@edvoy.com'
 var passWord = ''
@@ -38,7 +38,7 @@ function getSignature() {
   // 	console.log(error)
   // })
 
-  startMeeting("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZGtLZXkiOiJMb1J6UmZNdG5NSDJoMFpobFQwTTN4dlg3ZVg1NksyWjRMc24iLCJtbiI6Ijg4NDU5MjA3NTA3Iiwicm9sZSI6MCwiaWF0IjoxNjYwMDU4Nzc4LCJleHAiOjE2NjAwNjU5NzgsImFwcEtleSI6IkxvUnpSZk10bk1IMmgwWmhsVDBNM3h2WDdlWDU2SzJaNExzbiIsInRva2VuRXhwIjoxNjYwMDY1OTc4fQ.A50BsELDURuR3StoFnKeNt_-BftI0f9Rh007mnwrV-k")
+  startMeeting("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZGtLZXkiOiJMb1J6UmZNdG5NSDJoMFpobFQwTTN4dlg3ZVg1NksyWjRMc24iLCJtbiI6Ijg0Mzc3MDMyMzI2Iiwicm9sZSI6MCwiaWF0IjoxNjYwMTA5Mzc1LCJleHAiOjE2NjAxMTY1NzUsImFwcEtleSI6IkxvUnpSZk10bk1IMmgwWmhsVDBNM3h2WDdlWDU2SzJaNExzbiIsInRva2VuRXhwIjoxNjYwMTE2NTc1fQ.hX2-UqYe-ljuNaKXrn4I5xQ1aX6okn4jDScsQAkraQc")
 
 }
 
